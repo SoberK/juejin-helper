@@ -55,6 +55,7 @@ const main = async () => {
 
   // 签到天数
   const counts = await juejin.getCounts()
+  console.log(counts)
 
   growth.contCount = counts.cont_count
   growth.sumCount = counts.sum_count
