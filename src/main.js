@@ -45,10 +45,10 @@ const main = async () => {
 
   // 签到
   const checkIn = await juejin.getTodayStatus()
-
+  console.log('checkIn:'+checkIn)
   if (!checkIn) {
     const checkInResult = await juejin.checkIn()
-
+  console.log('checkInResult:'+checkInResult)
     growth.checkedIn = true
     growth.incrPoint = checkInResult.incr_point
   }
